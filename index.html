@@ -17,21 +17,29 @@
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
         }
 
-        h1 {
-            font-size: 4.0em;
+        .content-box {
+            background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent black background */
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 900px;
+            margin: 50px auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        h1, h2 {
             color: #00ffff;
             text-align: center;
-            margin-top: 50px;
             text-transform: uppercase;
             letter-spacing: 3px;
+            margin-top: 50px;
         }
+
+        h1 {
+            font-size: 4em;
+        }
+
         h2 {
             font-size: 2.5em;
-            color: #00ffff;
-            text-align: center;
-            margin-top: 50px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
         }
 
         ul {
@@ -58,18 +66,14 @@
             color: #000;
         }
 
-        ul {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 20px;
-        }
-
         /* Media query for smaller devices */
         @media screen and (max-width: 768px) {
             h1 {
                 font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.8em;
             }
 
             a {
@@ -80,34 +84,37 @@
     </style>
 </head>
 <body>
-    <h1>FAQ Practice</h1>
-    <h2>Operating Systems</h2>
-    <ul>
-        <li><a href="https://www.geeksforgeeks.org/quizzes/50-operating-system-mcqs-with-answers/" target="_blank">OS MCQs with Answers</a></li>
-        <li><a href="https://codex.cs.yale.edu/avi/os-book/OS10/review-dir/index.html" target="_blank">OS Review from Yale</a></li>
-        <li><a href="https://www.geeksforgeeks.org/operating-systems-interview-questions/" target="_blank">OS Interview Questions</a></li>
-        <li><a href="https://www.edureka.co/blog/interview-questions/linux-interview-questions-for-beginners/amp/" target="_blank">Linux Interview Questions for Beginners</a></li>
-        <li><a href="https://www.geeksforgeeks.org/operating-systems-gate-questions/" target="_blank">OS GATE Questions</a></li>
-    </ul>
+    <div class="content-box">
+        <h1><u>FAQ</u> <u>Practice</u></h1>
 
-    <h2>Computer Networks</h2>
-    <ul>
-        <li><a href="https://www.geeksforgeeks.org/networking-interview-questions/" target="_blank">Networking Interview Questions</a></li>
-        <li><a href="https://www.geeksforgeeks.org/quizzes/50-computer-networks-mcqs-with-answers/" target="_blank">Computer Networks MCQs with Answers</a></li>
-        <li><a href="https://www.geeksforgeeks.org/computer-networks-gate-questions/" target="_blank">Computer Networks GATE Questions</a></li>
-        <li><a href="https://www.researchgate.net/topic/Computer-Networks" target="_blank">Research on Computer Networks</a></li>
-        <li><a href="https://itexamanswers.net/networking-essentials-version-2-modules-5-8-network-protocols-and-architecture-pre-test-exam.html" target="_blank">Network Protocols and Architecture Pre-Test Exam</a></li>
-        <li><a href="http://www.1on1training.net/index-2191.html" target="_blank">Networking Guide</a></li>
-    </ul>
+        <h2>Operating Systems</h2>
+        <ul>
+            <li><a href="https://www.geeksforgeeks.org/quizzes/50-operating-system-mcqs-with-answers/" target="_blank">OS MCQs with Answers</a></li>
+            <li><a href="https://codex.cs.yale.edu/avi/os-book/OS10/review-dir/index.html" target="_blank">OS Review from Yale</a></li>
+            <li><a href="https://www.geeksforgeeks.org/operating-systems-interview-questions/" target="_blank">OS Interview Questions</a></li>
+            <li><a href="https://www.edureka.co/blog/interview-questions/linux-interview-questions-for-beginners/amp/" target="_blank">Linux Interview Questions for Beginners</a></li>
+            <li><a href="https://www.geeksforgeeks.org/operating-systems-gate-questions/" target="_blank">OS GATE Questions</a></li>
+        </ul>
 
-    <h2>Database Systems</h2>
-    <ul>
-        <li><a href="https://www.geeksforgeeks.org/quizzes/50-dbms-mcqs-with-answers/" target="_blank">DBMS MCQs with Answers</a></li>
-    </ul>
+        <h2>Computer Networks</h2>
+        <ul>
+            <li><a href="https://www.geeksforgeeks.org/networking-interview-questions/" target="_blank">Networking Interview Questions</a></li>
+            <li><a href="https://www.geeksforgeeks.org/quizzes/50-computer-networks-mcqs-with-answers/" target="_blank">Computer Networks MCQs with Answers</a></li>
+            <li><a href="https://www.geeksforgeeks.org/computer-networks-gate-questions/" target="_blank">Computer Networks GATE Questions</a></li>
+            <li><a href="https://www.researchgate.net/topic/Computer-Networks" target="_blank">Research on Computer Networks</a></li>
+            <li><a href="https://itexamanswers.net/networking-essentials-version-2-modules-5-8-network-protocols-and-architecture-pre-test-exam.html" target="_blank">Network Protocols and Architecture Pre-Test Exam</a></li>
+            <li><a href="http://www.1on1training.net/index-2191.html" target="_blank">Networking Guide</a></li>
+        </ul>
 
-    <h2>All in one</h2>
-    <ul>
-        <li><a href="https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/" target="_blank">Must-Do Questions for DBMS, CN, OS Interviews</a></li>
-    </ul>
+        <h2>Database Systems</h2>
+        <ul>
+            <li><a href="https://www.geeksforgeeks.org/quizzes/50-dbms-mcqs-with-answers/" target="_blank">DBMS MCQs with Answers</a></li>
+        </ul>
+
+        <h2>All in one</h2>
+        <ul>
+            <li><a href="https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/" target="_blank">Must-Do Questions for DBMS, CN, OS Interviews</a></li>
+        </ul>
+    </div>
 </body>
 </html>
